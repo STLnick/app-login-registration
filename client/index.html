@@ -3,33 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font: Lato -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!-- modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css" />
     <title>Registration Form</title>
   </head>
   <body>
-    <h1>Registration Form</h1>
-    <form>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="user@email.com" />
-      </div>
-      <div>
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="123-456-7890" />
-      </div>
-      <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="John Doe" />
-      </div>
-      <div>
-        <label for="username">Username</label>
-        <input type="text" id="username" placeholder="johndoe123" />
-      </div>
-      <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="supersecret" />
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+      <h1 class="title">Registration Form</h1>
+      <form class="regForm">
+        <div class="regField">
+          <label class="regLabel" for="email">Email</label>
+          <input
+            type="email"
+            class="regInput"
+            id="email"
+            placeholder="user@email.com"
+          />
+        </div>
+        <div class="regField">
+          <label class="regLabel" for="phone">Phone Number</label>
+          <input
+            type="tel"
+            class="regInput"
+            id="phone"
+            placeholder="123-456-7890"
+          />
+        </div>
+        <div class="regField">
+          <label class="regLabel" for="name">Name</label>
+          <input
+            type="text"
+            class="regInput"
+            id="name"
+            placeholder="John Doe"
+          />
+        </div>
+        <div class="regField">
+          <label class="regLabel" for="username">Username</label>
+          <input
+            type="text"
+            class="regInput"
+            id="username"
+            placeholder="johndoe123"
+          />
+        </div>
+        <div class="regField">
+          <label class="regLabel" for="password">Password</label>
+          <input
+            type="password"
+            class="regInput"
+            id="password"
+            placeholder="supersecret"
+          />
+        </div>
+        <button id="submitBtn" type="submit">Submit</button>
+      </form>
+    </div>
     <!-- 'Connect' JS to this HTML file. -->
     <script src="./scripts.js"></script>
   </body>
