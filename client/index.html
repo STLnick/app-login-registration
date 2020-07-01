@@ -3,10 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Update '<title>'. -->
-    <title>Document</title>
+    <title>Registration Form</title>
   </head>
   <body>
+    <h1>Registration Form</h1>
+    <form>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="user@email.com" />
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" />
+      </div>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="John Doe" />
+      </div>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="johndoe123" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="supersecret" />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
     <!-- 'Connect' JS to this HTML file. -->
     <script src="./scripts.js"></script>
   </body>
