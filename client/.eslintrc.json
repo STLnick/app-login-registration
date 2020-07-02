@@ -15,7 +15,9 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": ["jest"],
+    "plugins": [
+        "jest"
+    ],
     "rules": {
         "array-callback-return": "warn",
         "jest/no-disabled-tests": "warn",
