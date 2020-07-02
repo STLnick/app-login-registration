@@ -1,58 +1,62 @@
+/* https://type-scale.com/?size=20&scale=1.250&text=A%20Visual%20Type%20Scale&font=Lato&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false */
+
+:root {
+  --primary-color: #1e90ff;
+  --secondary-color: #00e6bb;
+  --tertiary-color: #f9f871;
+  --accent-color: #90f489;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  background: var(--tertiary-color);
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
-.container {
-  margin-top: 20px;
-  margin-left: 20px;
-  border: 2px dashed dodgerblue;
-  width: 400px;
-  padding: 10px;
-}
-
-.title {
-  color: darkblue;
-  margin-left: 60px;
-}
-
-#submitBtn {
-  color: blue;
-  background: white;
-  border: 2px solid blue;
-  border-radius: 5px;
-  font-weight: bold;
-  height: 30px;
-  width: 100px;
-  margin: 15px 0 10px 0;
-}
-
-.regField {
-  margin-bottom: 10px;
-}
-
-.regForm {
-  color: dodgerblue;
-  height: auto;
-  width: 100%;
+h1 {
+  color: var(--primary-color);
+  font-size: 1.953em;
+  padding: 1rem;
   text-align: center;
+  text-shadow: var(--secondary-color) 1px 0 10px;
 }
 
-#email {
-  margin-left: 74px;
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-#phone {
-  margin-left: 6px;
+label {
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
-#name {
-  margin-left: 71px;
+input {
+  border-radius: 3px;
+  margin: 0.5rem;
+  padding: 3px;
 }
 
-#username {
-  margin-left: 40px;
+div:last-of-type {
+  margin-bottom: 1rem;
 }
 
-#password {
-  margin-left: 45px;
+button {
+  background-color: var(--accent-color);
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px var(--primary-color);
+  color: white;
+  min-width: 3rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* Classes */
+
+.screen-reader-text {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
 }
