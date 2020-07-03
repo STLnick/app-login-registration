@@ -1,3 +1,5 @@
-document.querySelector('form').addEventListener('submit', () => {
-  console.log('Form has been submitted!');
-});
+document.querySelector('form').addEventListener('submit', (event) => {
+  event.preventDefault()
+
+  console.log('Form has been submitted!')
+})
