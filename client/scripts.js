@@ -41,12 +41,14 @@ regForm.addEventListener('submit', (event) => {
 loginForm.addEventListener('submit', (event) => {
   event.preventDefault()
   // Get username and password values
-  const userLoggingIn = {
+  const loginToCheck = {
     username: loginInputs.username.value,
     password: loginInputs.password.value
   }
   // Use findIndex to check if users[] contains that pairing
-  const userIndex = users.findIndex(user => user.username === userLoggingIn.username && user.password === userLoggingIn.password)
+  const userIndex = users.findIndex(user => {
+    return user.username === loginToCheck.username && user.password === loginToCheck.password
+  })
   // Console log message if login successful/failed
   if (userIndex !== -1) { console.log('👍🏾') } else { console.log('👎🏾') }
   // Clear input fields
