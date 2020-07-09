@@ -8,9 +8,10 @@
 }
 
 body {
-  background: var(--tertiary-color);
+  background: linear-gradient(var(--tertiary-color), var(--secondary-color));
   box-sizing: border-box;
   font-size: 20px;
+  height: 100vh;
 }
 
 h1 {
@@ -38,7 +39,7 @@ input {
   padding: 3px;
 }
 
-div:last-of-type {
+.regField:last-of-type {
   margin-bottom: 1rem;
 }
 
