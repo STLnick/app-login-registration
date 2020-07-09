@@ -65,6 +65,7 @@ button {
   box-shadow: 5px 5px 5px var(--primary-color);
   color: white;
   min-width: 3rem;
+  outline: none;
   padding: 0.5rem;
   text-transform: uppercase;
 }
