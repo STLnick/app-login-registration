@@ -1,31 +1,54 @@
 const regForm = document.querySelector('.regForm')
+const regInputs = {
+  email: regForm.querySelector('#email'),
+  phone: regForm.querySelector('#phone'),
+  name: regForm.querySelector('#name'),
+  username: regForm.querySelector('#username'),
+  password: regForm.querySelector('#password')
+}
 const loginForm = document.querySelector('.login-form')
+const loginInputs = {
+  username: loginForm.querySelector('#user-login-input'),
+  password: loginForm.querySelector('#password-login-input')
+}
 
 const users = []
 
+const clearInputs = (inputs) => {
+  for (const input in inputs) {
+    inputs[input].value = ''
+  }
+}
+
+/* REGISTER ==================== */
 regForm.addEventListener('submit', (event) => {
   event.preventDefault()
-
+  // Grab values for new user
   const newUser = {
-    email: regForm.querySelector('#email').value,
-    phone: regForm.querySelector('#phone').value,
-    name: regForm.querySelector('#name').value,
-    username: regForm.querySelector('#username').value,
-    password: regForm.querySelector('#password').value
+    email: regInputs.email.value,
+    phone: regInputs.phone.value,
+    name: regInputs.name.value,
+    username: regInputs.username.value,
+    password: regInputs.password.value
   }
-
-  console.log(newUser) // TESTING
+  // Add new user to array
   users.push(newUser)
+  // Clear input fields
+  clearInputs(regInputs)
 })
 
+/* LOGIN ==================== */
 loginForm.addEventListener('submit', (event) => {
   event.preventDefault()
   // Get username and password values
-  const username = loginForm.querySelector('#user-login-input').value
-  const pw = loginForm.querySelector('#password-login-input').value
-
+  const userLoggingIn = {
+    username: loginInputs.username.value,
+    password: loginInputs.password.value
+  }
   // Use findIndex to check if users[] contains that pairing
-  const userIndex = users.findIndex(user => user.username === username && user.password === pw)
-  console.log(userIndex)
-  console.log('A user logged in!!!')
+  const userIndex = users.findIndex(user => user.username === userLoggingIn.username && user.password === userLoggingIn.password)
+  // Console log message if login successful/failed
+  if (userIndex !== -1) { console.log('👍🏾') } else { console.log('👎🏾') }
+  // Clear input fields
+  clearInputs(loginInputs)
 })
