@@ -1,0 +1,6 @@
+export { default as Email } from './Email'
+export { default as Phone } from './Phone'
+export { default as Name } from './Name'
+export { default as RegUsername } from './Username'
+export { default as RegPassword } from './Password'
+export { default as SubmitButton } from './SubmitButton'
