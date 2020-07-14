@@ -1,4 +1,5 @@
-const regForm = document.querySelector('.regForm')
+const regForm = document.querySelector('#registration')
+console.log(regForm)
 const regInputs = {
   email: regForm.querySelector('#email'),
   phone: regForm.querySelector('#phone'),
@@ -6,7 +7,7 @@ const regInputs = {
   username: regForm.querySelector('#username'),
   password: regForm.querySelector('#password')
 }
-const loginForm = document.querySelector('.login-form')
+const loginForm = document.querySelector('#login')
 const loginInputs = {
   username: loginForm.querySelector('#user-login-input'),
   password: loginForm.querySelector('#password-login-input')
