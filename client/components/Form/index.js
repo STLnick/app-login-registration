@@ -1,5 +1,7 @@
-export default () => `<form class="flex-col-center">
-  <fieldset id="registration" class="flex-col-center">
+import './Form.css'
+
+export default () => `<form class="flex-col-align--center">
+  <fieldset id="registration" class="flex-col-align--center">
     <div class="regField">
       <label class="screen-reader-text" for="email">Email</label>
       <input type="email" class="regInput" id="email" placeholder="Email" />
@@ -22,7 +24,8 @@ export default () => `<form class="flex-col-center">
     </div>
     <button id="regBtn" type="submit">Register</button>
   </fieldset>
-  <fieldset id="login" class="flex-col-center">
+
+  <fieldset id="login" class="flex-col-align--center">
     <h2>Already a user?</h2>
     <h3>Sign in</h3>
     <div class="user-login">
