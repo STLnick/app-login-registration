@@ -1,0 +1,16 @@
+button {
+  background-color: var(--accent-color);
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px var(--primary-color);
+  color: white;
+  margin: 0 auto;
+  min-width: 3rem;
+  outline: none;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+#login-btn {
+  margin-top: 1em;
+}
