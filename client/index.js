@@ -2,7 +2,7 @@ import { Form } from './components'
 
 const HTMLRoot = document.querySelector('#root')
 
-const props = {
+const state = {
   Form: [
     {
       type: 'text',
@@ -20,7 +20,8 @@ const props = {
   ]
 }
 
-function render() {
-  HTMLRoot.innerHTML = Form(props.Form)
+function render(st) {
+  HTMLRoot.innerHTML = Form(st.Form)
 }
-render()
+
+render(state)
