@@ -3,21 +3,32 @@ import { Form } from './components'
 const HTMLRoot = document.querySelector('#root')
 
 const state = {
-  Form: [
-    {
-      type: 'text',
-      label: 'Name',
-      placeholder: 'Your Name'
-    },
-    {
-      type: 'email',
-      label: 'Email'
-    },
-    {
-      type: 'tel',
-      label: 'Phone'
-    }
-  ]
+  Form: {
+    divs: [
+      {
+        label: 'Name',
+      },
+      {
+        label: 'Email',
+        type: 'email'
+      },
+      {
+        label: 'Phone',
+        type: 'tel'
+      }
+    ],
+    buttons: [
+      {
+        id: 'submit-btn',
+        text: 'Submit',
+        type: 'submit'
+      },
+      {
+        id: 'login-btn',
+        text: 'Login'
+      }
+    ]
+  }
 }
 
 function render(st) {
