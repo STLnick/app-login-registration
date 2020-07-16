@@ -6,7 +6,7 @@ const state = {
   Form: {
     divs: [
       {
-        label: 'Name',
+        label: 'Name'
       },
       {
         label: 'Email',
